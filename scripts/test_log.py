@@ -1,5 +1,8 @@
 import sys,os
 sys.path.append(os.getcwd())
+import allure
+
+
 from base.get_datas import get_datas
 from base.init_driver import init_driver
 from page.page import Page
@@ -19,6 +22,7 @@ class Test_log():
         self.page_obj.driver.quit()
     @pytest.mark.parametrize("test_id,name,passwd,tag,redy,shiji",data_list())
     def test_lod(self,test_id,name,passwd,tag,redy,shiji):
+        allure.attach("用例编号","{}".format(test_id))
         self.page_obj.get_index_obj().click_my_btn()
         self.page_obj.get_sin_obj().click_old_num()
         self.page_obj.get_log_obj().login(name,passwd)

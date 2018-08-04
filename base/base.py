@@ -1,3 +1,4 @@
+import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
@@ -44,6 +45,8 @@ class Base:
         ele=self.seach_element(loc, timeout, poll)
         ele.clear()
         ele.send_keys(text)
+
+    @allure.step(title="滑动屏幕操作")
     def swipe(self,start_x,start_y,end_x,end_y):
         """
         滑动手机
@@ -56,6 +59,9 @@ class Base:
         x=self.drive.get_window_size().get("width")
         y=self.drive.get_window_size().get("height")
         self.drive.swipe(x*start_x,y*start_y,x*end_x,y*end_y)
+
+    @allure.step(title="获取toast信息")
     def get_taost(self,msge):
-        st=self.seach_element((By.XPATH, "//*[contains(@text,'{}')]".format(msge)), timeout=5,poll=0.5)
-        return st.text
+        st=self.seach_element((By.XPATH, "//*[contains(@text,'{}')]".format(msge)), timeout=5,poll=0.5).text
+        allure.attach("toast的内容","{}".format(st))
+        return st
