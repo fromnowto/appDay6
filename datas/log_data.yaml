@@ -1,0 +1,38 @@
+test_log_001:
+  name: "18697780270"
+  passwd: "123321ly"
+  tag: 1
+test_log_002:
+  name: " 18697780270"
+  passwd: "123321ly"
+  tag: 1
+test_log_003:
+  name: "18697780270 "
+  passwd: "123321ly"
+  tag: 1
+test_login_005:
+  name: "13627289561 "
+  passwd: "ssss"
+  get_mes: "错误"
+  expect: "登录密码错误"
+
+test_login_007:
+  name: "13888888888 "
+  passwd: "ssss"
+  get_mes: "不存在"
+  expect: "此用户不存在"
+
+test_login_010:
+  name: "136 2728 9561"
+  passwd: "ssss"
+  get_mes: "不存在"
+  expect: "此用户不存在"
+
+test_login_011:
+  name: "111中guo#@"
+  passwd: "ssss"
+  get_mes: "不存在"
+  expect: "此用户不存在"
+
+
+
