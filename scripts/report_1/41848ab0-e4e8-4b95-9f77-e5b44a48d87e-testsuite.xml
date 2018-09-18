@@ -1,0 +1,26 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1533610111059" stop="1533610111059">
+  <description>This is the tests collection phase. Failures are modules that failed to collect.</description>
+  <name>test_collection_phase</name>
+  <title>Collection phase</title>
+  <labels/>
+  <test-cases>
+    <test-case start="1533610111059" status="broken" stop="1533610111059">
+      <name>test_webview</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>test_webview.py:18: in &lt;module&gt;
+    ba_obj.input_element((By.ID,"index-kw"),"123")
+..\base\base.py:46: in input_element
+    ele=self.seach_element(loc, timeout, poll)
+..\base\base.py:18: in seach_element
+    return WebDriverWait(self.drive,timeout,poll).until(lambda x:x.find_element(*loc))
+D:\python\lib\site-packages\selenium-2.48.0-py3.6.egg\selenium\webdriver\support\wait.py:80: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message:</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

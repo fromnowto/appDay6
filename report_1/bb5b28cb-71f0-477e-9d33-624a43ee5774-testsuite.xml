@@ -1,0 +1,51 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1533380947325" stop="1533380947325">
+  <description>This is the tests collection phase. Failures are modules that failed to collect.</description>
+  <name>test_collection_phase</name>
+  <title>Collection phase</title>
+  <labels/>
+  <test-cases>
+    <test-case start="1533380947325" status="broken" stop="1533380947325">
+      <name>test_log</name>
+      <failure>
+        <message>failed</message>
+        <stack-trace>scripts\test_log.py:18: in &lt;module&gt;
+    class Test_log():
+scripts\test_log.py:23: in Test_log
+    @pytest.mark.parametrize("test_id,name,passwd,tag,redy,shiji",data_list())
+scripts\test_log.py:12: in data_list
+    data_dict = get_datas("log_data.yaml")
+base\get_datas.py:6: in get_datas
+    return yaml.load(f)
+d:\python\lib\site-packages\yaml\__init__.py:72: in load
+    return loader.get_single_data()
+d:\python\lib\site-packages\yaml\constructor.py:35: in get_single_data
+    node = self.get_single_node()
+d:\python\lib\site-packages\yaml\composer.py:36: in get_single_node
+    document = self.compose_document()
+d:\python\lib\site-packages\yaml\composer.py:55: in compose_document
+    node = self.compose_node(None, None)
+d:\python\lib\site-packages\yaml\composer.py:84: in compose_node
+    node = self.compose_mapping_node(anchor)
+d:\python\lib\site-packages\yaml\composer.py:127: in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+d:\python\lib\site-packages\yaml\parser.py:98: in check_event
+    self.current_event = self.state()
+d:\python\lib\site-packages\yaml\parser.py:428: in parse_block_mapping_key
+    if self.check_token(KeyToken):
+d:\python\lib\site-packages\yaml\scanner.py:115: in check_token
+    while self.need_more_tokens():
+d:\python\lib\site-packages\yaml\scanner.py:149: in need_more_tokens
+    self.stale_possible_simple_keys()
+d:\python\lib\site-packages\yaml\scanner.py:289: in stale_possible_simple_keys
+    "could not find expected ':'", self.get_mark())
+E   yaml.scanner.ScannerError: while scanning a simple key
+E     in "./datas\log_data.yaml", line 5, column 1
+E   could not find expected ':'
+E     in "./datas\log_data.yaml", line 7, column 10</stack-trace>
+      </failure>
+      <attachments/>
+      <labels/>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

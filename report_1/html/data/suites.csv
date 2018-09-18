@@ -1,0 +1,8 @@
+"Status","Name","Duration in ms","Description"
+"passed","test_log.Test_log.test_lod[test_log_001-18697780270-123321ly-1-None-None]","64016",""
+"passed","test_log.Test_log.test_lod[test_login_007-13888888888 -ssss-None-\u4e0d\u5b58\u5728-\u6b64\u7528\u6237\u4e0d\u5b58\u5728]","7606",""
+"passed","test_log.Test_log.test_lod[test_login_010-136 2728 9561-ssss-None-\u4e0d\u5b58\u5728-\u6b64\u7528\u6237\u4e0d\u5b58\u5728]","7881",""
+"passed","test_log.Test_log.test_lod[test_log_002- 18697780270-123321ly-1-None-None]","12735",""
+"passed","test_log.Test_log.test_lod[test_log_003-18697780270 -123321ly-1-None-None]","14349",""
+"passed","test_log.Test_log.test_lod[test_login_011-111\u4e2dguo#@-ssss-None-\u4e0d\u5b58\u5728-\u6b64\u7528\u6237\u4e0d\u5b58\u5728]","8035",""
+"failed","test_log.Test_log.test_lod[test_login_005-13627289561 -ssss-None-\u9519\u8bef-\u767b\u5f55\u5bc6\u7801\u9519\u8bef1]","10250",""

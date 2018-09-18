@@ -7,7 +7,7 @@ import page
 @allure.step(title="进入登录页面")
 class Login(Base):
     @allure.step(title="进入登录操作")
-    def login(self,name,passwd):
+    def login(self,name="18697780270",passwd="123321ly"):
         #账号登录，输入账号，密码
         allure.attach("账号", "{}".format(name))
         self.input_element(page.login_name_id,name)

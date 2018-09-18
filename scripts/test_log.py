@@ -32,9 +32,10 @@ class Test_log():
                 at = self.page_obj.get_huiyuan_obj().if_all_in_page()
                 self.page_obj.get_huiyuan_obj().click_seting()
                 self.page_obj.get_seting_obj().outlog()
-                assert at
+                assert at ,self.page_obj.get_log_obj().get_screen()
 
             except:
+                self.page_obj.get_log_obj().get_screen()
                 self.page_obj.get_log_obj().click_close_log()
                 assert False
         else:
@@ -42,7 +43,7 @@ class Test_log():
                 ast=self.page_obj.get_log_obj().get_taost(redy)
                 log_butn=self.page_obj.get_log_obj().login_btn()
 
-                assert ast == shiji and log_butn
+                assert ast == shiji and log_butn,self.page_obj.get_log_obj().get_screen()
             except:
                 assert False
 

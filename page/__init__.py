@@ -33,3 +33,4 @@ setting_btn_id= (By.ID, "com.yunmall.lc:id/ymtitlebar_left_btn_image")
 logout_btn_id = (By.ID, "com.yunmall.lc:id/setting_logout")
 # 确认退出按钮
 confirm_logout_btn_id = (By.ID, "com.yunmall.lc:id/ymdialog_right_button")
+seting_addr_id = (By.ID,"com.yunmall.lc:id/setting_address_manage")

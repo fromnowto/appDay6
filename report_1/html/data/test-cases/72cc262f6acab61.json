@@ -1,0 +1,315 @@
+{
+  "uid" : "72cc262f6acab61",
+  "name" : "Test_log.test_lod[test_login_005-13627289561 -ssss-None-\\u9519\\u8bef-\\u767b\\u5f55\\u5bc6\\u7801\\u9519\\u8bef1]",
+  "fullName" : "test_log.Test_log.test_lod[test_login_005-13627289561 -ssss-None-\\u9519\\u8bef-\\u767b\\u5f55\\u5bc6\\u7801\\u9519\\u8bef1]",
+  "historyId" : "47d8af948319edfd6f91f670888dfb55",
+  "time" : {
+    "start" : 1533371649237,
+    "stop" : 1533371659487,
+    "duration" : 10250
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False",
+  "statusTrace" : "self = <test_log.Test_log object at 0x000002326E8A8898>\ntest_id = 'test_login_005', name = '13627289561 ', passwd = 'ssss', tag = None\nredy = '错误', shiji = '登录密码错误1'\n\n    @pytest.mark.parametrize(\"test_id,name,passwd,tag,redy,shiji\",data_list())\n    def test_lod(self,test_id,name,passwd,tag,redy,shiji):\n        allure.attach(\"用例编号\",\"{}\".format(test_id))\n        self.page_obj.get_index_obj().click_my_btn()\n        self.page_obj.get_sin_obj().click_old_num()\n        self.page_obj.get_log_obj().login(name,passwd)\n    \n        if tag:\n            try:\n                at = self.page_obj.get_huiyuan_obj().if_all_in_page()\n                self.page_obj.get_huiyuan_obj().click_seting()\n                self.page_obj.get_seting_obj().outlog()\n                assert at ,self.page_obj.get_log_obj().get_screen()\n    \n            except:\n                self.page_obj.get_log_obj().get_screen()\n                self.page_obj.get_log_obj().click_close_log()\n                assert False\n        else:\n            try:\n                ast=self.page_obj.get_log_obj().get_taost(redy)\n                log_butn=self.page_obj.get_log_obj().login_btn()\n    \n>               assert ast == shiji and log_butn,self.page_obj.get_log_obj().get_screen()\nE               AssertionError: None\nE               assert ('登录密码错误' == '登录密码错误1'\nE                 - 登录密码错误\nE                 + 登录密码错误1\nE                 ?       +)\n\nscripts\\test_log.py:46: AssertionError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <test_log.Test_log object at 0x000002326E8A8898>\ntest_id = 'test_login_005', name = '13627289561 ', passwd = 'ssss', tag = None\nredy = '错误', shiji = '登录密码错误1'\n\n    @pytest.mark.parametrize(\"test_id,name,passwd,tag,redy,shiji\",data_list())\n    def test_lod(self,test_id,name,passwd,tag,redy,shiji):\n        allure.attach(\"用例编号\",\"{}\".format(test_id))\n        self.page_obj.get_index_obj().click_my_btn()\n        self.page_obj.get_sin_obj().click_old_num()\n        self.page_obj.get_log_obj().login(name,passwd)\n    \n        if tag:\n            try:\n                at = self.page_obj.get_huiyuan_obj().if_all_in_page()\n                self.page_obj.get_huiyuan_obj().click_seting()\n                self.page_obj.get_seting_obj().outlog()\n                assert at ,self.page_obj.get_log_obj().get_screen()\n    \n            except:\n                self.page_obj.get_log_obj().get_screen()\n                self.page_obj.get_log_obj().click_close_log()\n                assert False\n        else:\n            try:\n                ast=self.page_obj.get_log_obj().get_taost(redy)\n                log_butn=self.page_obj.get_log_obj().login_btn()\n    \n                assert ast == shiji and log_butn,self.page_obj.get_log_obj().get_screen()\n            except:\n>               assert False\nE               assert False\n\nscripts\\test_log.py:48: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False",
+    "statusTrace" : "self = <test_log.Test_log object at 0x000002326E8A8898>\ntest_id = 'test_login_005', name = '13627289561 ', passwd = 'ssss', tag = None\nredy = '错误', shiji = '登录密码错误1'\n\n    @pytest.mark.parametrize(\"test_id,name,passwd,tag,redy,shiji\",data_list())\n    def test_lod(self,test_id,name,passwd,tag,redy,shiji):\n        allure.attach(\"用例编号\",\"{}\".format(test_id))\n        self.page_obj.get_index_obj().click_my_btn()\n        self.page_obj.get_sin_obj().click_old_num()\n        self.page_obj.get_log_obj().login(name,passwd)\n    \n        if tag:\n            try:\n                at = self.page_obj.get_huiyuan_obj().if_all_in_page()\n                self.page_obj.get_huiyuan_obj().click_seting()\n                self.page_obj.get_seting_obj().outlog()\n                assert at ,self.page_obj.get_log_obj().get_screen()\n    \n            except:\n                self.page_obj.get_log_obj().get_screen()\n                self.page_obj.get_log_obj().click_close_log()\n                assert False\n        else:\n            try:\n                ast=self.page_obj.get_log_obj().get_taost(redy)\n                log_butn=self.page_obj.get_log_obj().login_btn()\n    \n>               assert ast == shiji and log_butn,self.page_obj.get_log_obj().get_screen()\nE               AssertionError: None\nE               assert ('登录密码错误' == '登录密码错误1'\nE                 - 登录密码错误\nE                 + 登录密码错误1\nE                 ?       +)\n\nscripts\\test_log.py:46: AssertionError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <test_log.Test_log object at 0x000002326E8A8898>\ntest_id = 'test_login_005', name = '13627289561 ', passwd = 'ssss', tag = None\nredy = '错误', shiji = '登录密码错误1'\n\n    @pytest.mark.parametrize(\"test_id,name,passwd,tag,redy,shiji\",data_list())\n    def test_lod(self,test_id,name,passwd,tag,redy,shiji):\n        allure.attach(\"用例编号\",\"{}\".format(test_id))\n        self.page_obj.get_index_obj().click_my_btn()\n        self.page_obj.get_sin_obj().click_old_num()\n        self.page_obj.get_log_obj().login(name,passwd)\n    \n        if tag:\n            try:\n                at = self.page_obj.get_huiyuan_obj().if_all_in_page()\n                self.page_obj.get_huiyuan_obj().click_seting()\n                self.page_obj.get_seting_obj().outlog()\n                assert at ,self.page_obj.get_log_obj().get_screen()\n    \n            except:\n                self.page_obj.get_log_obj().get_screen()\n                self.page_obj.get_log_obj().click_close_log()\n                assert False\n        else:\n            try:\n                ast=self.page_obj.get_log_obj().get_taost(redy)\n                log_butn=self.page_obj.get_log_obj().login_btn()\n    \n                assert ast == shiji and log_butn,self.page_obj.get_log_obj().get_screen()\n            except:\n>               assert False\nE               assert False\n\nscripts\\test_log.py:48: AssertionError",
+    "steps" : [ {
+      "name" : "进入首次展示页面",
+      "time" : {
+        "start" : 1533371649240,
+        "stop" : 1533371649240,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击我",
+      "time" : {
+        "start" : 1533371649240,
+        "stop" : 1533371650715,
+        "duration" : 1475
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "进入注册页面",
+      "time" : {
+        "start" : 1533371650715,
+        "stop" : 1533371650715,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击已有账号登录",
+      "time" : {
+        "start" : 1533371650715,
+        "stop" : 1533371652375,
+        "duration" : 1660
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "进入登录页面",
+      "time" : {
+        "start" : 1533371652375,
+        "stop" : 1533371652375,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "进入登录操作",
+      "time" : {
+        "start" : 1533371652375,
+        "stop" : 1533371655466,
+        "duration" : 3091
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7698ca6ab5416cec",
+        "name" : "账号",
+        "source" : "7698ca6ab5416cec.txt",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "f3f44a58205fc020",
+        "name" : "密码",
+        "source" : "f3f44a58205fc020.txt",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "51fd5cb2ede26791",
+        "name" : "点击登录按钮",
+        "source" : "51fd5cb2ede26791.txt",
+        "type" : "text/plain",
+        "size" : 0
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "进入登录页面",
+      "time" : {
+        "start" : 1533371655466,
+        "stop" : 1533371655466,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "获取toast信息",
+      "time" : {
+        "start" : 1533371655466,
+        "stop" : 1533371656215,
+        "duration" : 749
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7559d9733ca31c1",
+        "name" : "toast的内容",
+        "source" : "7559d9733ca31c1.txt",
+        "type" : "text/plain",
+        "size" : 18
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "进入登录页面",
+      "time" : {
+        "start" : 1533371656215,
+        "stop" : 1533371656215,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "判断登录按钮是否存在",
+      "time" : {
+        "start" : 1533371656215,
+        "stop" : 1533371656247,
+        "duration" : 32
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4c0732039161a402",
+        "name" : "状态",
+        "source" : "4c0732039161a402.txt",
+        "type" : "text/plain",
+        "size" : 6
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "进入登录页面",
+      "time" : {
+        "start" : 1533371656248,
+        "stop" : 1533371656248,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "进入登录页面",
+      "time" : {
+        "start" : 1533371658961,
+        "stop" : 1533371658961,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击退出登录页面按钮",
+      "time" : {
+        "start" : 1533371658961,
+        "stop" : 1533371659018,
+        "duration" : 57
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "7bb9db9404760ff6",
+      "name" : "用例编号",
+      "source" : "7bb9db9404760ff6.txt",
+      "type" : "text/plain",
+      "size" : 14
+    }, {
+      "uid" : "59941f70c1c73626",
+      "name" : "截图",
+      "source" : "59941f70c1c73626.png",
+      "type" : "image/png",
+      "size" : 780399
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 13,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3NF71O7Q"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "8884-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test_log"
+  }, {
+    "name" : "testClass",
+    "value" : "test_log"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test_log.test_lod[test_login_005-13627289561 -ssss-None-\\u9519\\u8bef-\\u767b\\u5f55\\u5bc6\\u7801\\u9519\\u8bef1]"
+  }, {
+    "name" : "package",
+    "value" : "test_log"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "72cc262f6acab61.json",
+  "parameterValues" : [ ]
+}

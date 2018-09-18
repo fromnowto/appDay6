@@ -1,0 +1,313 @@
+{
+  "uid" : "16fed0b754f744b9",
+  "name" : "Test_log.test_lod[test_log_003-18697780270 -123321ly-1-None-None]",
+  "fullName" : "test_log.Test_log.test_lod[test_log_003-18697780270 -123321ly-1-None-None]",
+  "historyId" : "f92a11c189c5e66d52292d989029b200",
+  "time" : {
+    "start" : 1533371634834,
+    "stop" : 1533371649183,
+    "duration" : 14349
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "进入首次展示页面",
+      "time" : {
+        "start" : 1533371634837,
+        "stop" : 1533371634837,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击我",
+      "time" : {
+        "start" : 1533371634837,
+        "stop" : 1533371637046,
+        "duration" : 2209
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "进入注册页面",
+      "time" : {
+        "start" : 1533371637046,
+        "stop" : 1533371637046,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击已有账号登录",
+      "time" : {
+        "start" : 1533371637046,
+        "stop" : 1533371638623,
+        "duration" : 1577
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "进入登录页面",
+      "time" : {
+        "start" : 1533371638623,
+        "stop" : 1533371638623,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "进入登录操作",
+      "time" : {
+        "start" : 1533371638623,
+        "stop" : 1533371642009,
+        "duration" : 3386
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d939537b3b2498f6",
+        "name" : "账号",
+        "source" : "d939537b3b2498f6.txt",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "7afe4945721464ef",
+        "name" : "密码",
+        "source" : "7afe4945721464ef.txt",
+        "type" : "text/plain",
+        "size" : 8
+      }, {
+        "uid" : "93e0c187089f1990",
+        "name" : "点击登录按钮",
+        "source" : "93e0c187089f1990.txt",
+        "type" : "text/plain",
+        "size" : 0
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "进入会员中心页",
+      "time" : {
+        "start" : 1533371642009,
+        "stop" : 1533371642009,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "判断全部订单是否存在",
+      "time" : {
+        "start" : 1533371642009,
+        "stop" : 1533371643582,
+        "duration" : 1573
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "67e3b15c2c8086e",
+        "name" : "状态",
+        "source" : "67e3b15c2c8086e.txt",
+        "type" : "text/plain",
+        "size" : 6
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "进入会员中心页",
+      "time" : {
+        "start" : 1533371643582,
+        "stop" : 1533371643582,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击设置按钮",
+      "time" : {
+        "start" : 1533371643582,
+        "stop" : 1533371643634,
+        "duration" : 52
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "进入设置页面",
+      "time" : {
+        "start" : 1533371643634,
+        "stop" : 1533371643634,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "执行退出操作",
+      "time" : {
+        "start" : 1533371643634,
+        "stop" : 1533371649183,
+        "duration" : 5549
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "滑动屏幕操作",
+        "time" : {
+          "start" : 1533371646634,
+          "stop" : 1533371647855,
+          "duration" : 1221
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "a0e939d757d3532f",
+        "name" : "滑动操作",
+        "source" : "a0e939d757d3532f.txt",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "1d35d447dde700e9",
+        "name" : "退出操作",
+        "source" : "1d35d447dde700e9.txt",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "71fd96cf7791b0e6",
+        "name" : "退出操作",
+        "source" : "71fd96cf7791b0e6.txt",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "c3c629b53a250b7c",
+      "name" : "用例编号",
+      "source" : "c3c629b53a250b7c.txt",
+      "type" : "text/plain",
+      "size" : 12
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 13,
+    "attachmentsCount" : 8,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-3NF71O7Q"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "8884-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test_log"
+  }, {
+    "name" : "testClass",
+    "value" : "test_log"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test_log.test_lod[test_log_003-18697780270 -123321ly-1-None-None]"
+  }, {
+    "name" : "package",
+    "value" : "test_log"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "16fed0b754f744b9.json",
+  "parameterValues" : [ ]
+}

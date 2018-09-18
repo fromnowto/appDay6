@@ -1,4 +1,5 @@
 import allure
+import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
@@ -65,3 +66,8 @@ class Base:
         st=self.seach_element((By.XPATH, "//*[contains(@text,'{}')]".format(msge)), timeout=5,poll=0.5).text
         allure.attach("toast的内容","{}".format(st))
         return st
+    def get_screen(self):
+        file_name = "./screen/截图{}.png".format(int(time.time()))
+        self.drive.get_screenshot_as_file(file_name)
+        with open (file_name,"rb") as f:
+            allure.attach("截图",f.read(),allure.attach_type.PNG)

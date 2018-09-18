@@ -12,7 +12,7 @@ from appium import webdriver
     init_dict["resetKeyboard"] =True
     driver = webdriver.Remote("127.0.0.1:4723/wb/hub",init_dict)
     return driver"""
-def init_driver():
+def init_driver(a="com.yunmall.lc",b="com.yunmall.ymctoc.ui.activity.MainActivity"):
     desired_caps = {}
     desired_caps['platformName'] = 'Android'
     desired_caps['platformVersion'] = '5.1'
@@ -21,8 +21,8 @@ def init_driver():
     desired_caps['resetKeyboard'] = True
     desired_caps["automationName"] ="Uiautomator2"
 
-    desired_caps['appPackage'] = "com.yunmall.lc"
-    desired_caps['appActivity'] = "com.yunmall.ymctoc.ui.activity.MainActivity"
+    desired_caps['appPackage'] = a
+    desired_caps['appActivity'] = b
     driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
     return driver
 
